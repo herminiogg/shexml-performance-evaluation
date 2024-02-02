@@ -1,0 +1,19 @@
+PREFIX : <http://example.com/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX schema: <http://schema.org/>
+SOURCE films_json_file <data/films_1000_entries.json>
+ITERATOR film_json <jsonpath: $.films[*]> {
+    PUSHED_FIELD id <id>
+    FIELD name <name>
+    FIELD year <year>
+    FIELD country <country>
+    FIELD directors <director>
+}
+EXPRESSION films <films_json_file.film_json>
+
+:Films :[films.id] {
+    schema:name [films.name] ;
+    :year dbr:[films.year] ;
+    schema:countryOfOrigin dbr:[films.country] ;
+    schema:director dbr:[films.directors] ;
+}

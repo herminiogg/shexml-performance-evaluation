@@ -1,0 +1,73 @@
+---
+title: "Performance Analysis ShExML across versions with EHRI institutions files"
+author: "Herminio García-González"
+date: "2024-01-31"
+output: 
+  html_document: default
+  md_document:
+    variant: markdown_github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(summarytools)
+library(FSA)
+library(ggplot2)
+library(rstatix)
+library(rmarkdown)
+```
+# Set up
+
+```{r}
+datasetFull <- read.csv("C:/Users/Herminio/Git/shexml-performance-evaluation/statistics/results/resultEvaluationInstitutions.csv", sep=';')[, 2:3]
+dataset <- datasetFull[(datasetFull$Engine == "ShExML-v0.3.3.jar" | datasetFull$Engine == "ShExML-v0.4.0.jar" | datasetFull$Engine == "ShExML-v0.4.2.jar" | datasetFull$Engine == "ShExML-v0.5.1.jar"), ]
+
+```
+
+# Descriptive statistics
+```{r}
+stby(dataset, dataset$Engine, descr, round.digits=5, stats=c("mean", "med", "sd", "min", "max"))
+```
+
+# Testing normality
+```{r}
+by(dataset$Elapsed_time.ms., dataset$Engine, shapiro.test)
+```
+# Running Kruskal-Wallis
+```{r}
+kruskal.test(Elapsed_time.ms. ~ Engine , data = dataset)
+```
+# Post hoc test for Kruskal-Wallis
+```{r}
+dunnTest(Elapsed_time.ms. ~ Engine , data = dataset, method = "bh")
+```
+
+# Effect size
+```{r}
+post_hoc_results <- dunn_test(Elapsed_time.ms. ~ Engine , data = dataset, p.adjust.method = "BH")
+post_hoc_results$r <- post_hoc_results$statistic / sqrt(post_hoc_results$n1+post_hoc_results$n2)
+post_hoc_results[, c(1,2,3,10)]
+```
+
+# Plot
+```{r}
+dataset[(dataset$Engine == "ShExML-v0.4.0.jar" | dataset$Engine == "ShExML-v0.4.2.jar" | dataset$Engine == "ShExML-v0.5.1.jar"), ]  %>%
+    ggplot(aes(fill=Engine, y=Elapsed_time.ms., x=Engine)) +
+        geom_boxplot(
+            # Notch?
+            notch=TRUE,
+            notchwidth = 0.8,
+            
+            # custom outliers
+            outlier.colour="red",
+            outlier.fill="red",
+            outlier.size=3
+        )
+```
+```{r}
+dataset[(dataset$Engine == "ShExML-v0.4.0.jar" | dataset$Engine == "ShExML-v0.4.2.jar" | dataset$Engine == "ShExML-v0.5.1.jar"), ] %>%
+  ggplot(aes(fill=Engine, color=Engine, x=Elapsed_time.ms.)) +
+  geom_density(alpha = 0.15) +
+  theme_minimal() + 
+  ggtitle("Distribution of the three most performant versions", "By Engine")
+```

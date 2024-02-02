@@ -1,0 +1,19 @@
+PREFIX : <http://example.com/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX schema: <http://schema.org/>
+SOURCE films_xml_file <data/films_1000_entries.xml>
+ITERATOR film_xml <xpath: //film> {
+    FIELD id <@id>
+    FIELD name <name>
+    FIELD year <year>
+    FIELD country <country>
+    FIELD directors <directors/director>
+}
+EXPRESSION films <films_xml_file.film_xml>
+
+:Films :[films.id] {
+    schema:name [films.name] ;
+    :year dbr:[films.year] ;
+    schema:countryOfOrigin dbr:[films.country] ;
+    schema:director dbr:[films.directors] ;
+}

@@ -137,8 +137,10 @@ dataset[(dataset$Engine == "ShExML-v0.4.0.jar" | dataset$Engine == "ShExML-v0.4.
 dataset[(dataset$Engine == "ShExML-v0.4.0.jar" | dataset$Engine == "ShExML-v0.4.2.jar" | dataset$Engine == "ShExML-v0.5.1.jar"), ] %>%
   ggplot(aes(fill=Engine, color=Engine, x=Elapsed_time.ms.)) +
   geom_density(alpha = 0.15) +
+  xlab("Elapsed time (ms)") +
   theme_minimal() + 
-  ggtitle("Distribution of the three most performant versions", "By Engine")
+  theme(legend.position="bottom") +
+  ggtitle("Distribution of the three most performant versions", "EHRI institutions (JSON) - By Engine")
 ```
 
 ![](peformanceInstitutionsAnalysis_files/figure-markdown_github/unnamed-chunk-8-1.png)

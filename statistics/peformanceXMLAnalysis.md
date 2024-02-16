@@ -166,8 +166,10 @@ dataset[(dataset$Engine == "ShExML-v0.3.3.jar" | dataset$Engine == "ShExML-v0.4.
 dataset[(dataset$Engine == "ShExML-v0.3.3.jar" | dataset$Engine == "ShExML-v0.4.0.jar" | dataset$Engine == "ShExML-v0.4.2.jar"), ]  %>%
   ggplot(aes(fill=Engine, color=Engine, x=Elapsed_time.ms.)) +
   geom_density(alpha = 0.15) +
+  xlab("Elapsed time (ms)") +
   theme_minimal() + 
-  ggtitle("Distribution of the three closest performant versions", "By Engine")
+  theme(legend.position="bottom") +
+  ggtitle("Distribution of the three closest performant versions", "XML Films 1000 entries - By Engine")
 ```
 
 ![](peformanceXMLAnalysis_files/figure-markdown_github/unnamed-chunk-8-1.png)

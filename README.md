@@ -3,7 +3,7 @@ This repository collects the used scripts, resources and results for the ShExML 
 
 > If you want to see the statistical analysis of the data obtained using these resources you can visit the page [statistics](statistics).
 
-## Running the experioment and directory structure
+## Running the experiment and directory structure
 To run the experiment one can simply run the `run.sh` script:
 
 ```

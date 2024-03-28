@@ -1,4 +1,6 @@
 # ShExML performance optimisation paper: scripts and results
+[![DOI](https://zenodo.org/badge/751839577.svg)](https://zenodo.org/doi/10.5281/zenodo.10890036)
+
 This repository collects the used scripts, resources and results for the ShExML engine performance optimisation paper.
 
 > If you want to see the statistical analysis of the data obtained using these resources you can visit the page [statistics](statistics).

@@ -19,3 +19,12 @@ bash runEvaluationForXML.sh > resultEvaluationXML.txt
 
 echo "### EHRI institutions ###"
 bash runEvaluationForEHRIInstitutions.sh > resultEvaluationInstitutions.txt
+
+echo "### JSON - RAM and CPU ###"
+bash runEvaluationRAMAndCPUForJSON.sh > statistics/results/resultEvaluationRAMAndCPUForJSON.txt
+
+echo "### XML - RAM and CPU ###"
+bash runEvaluationRAMAndCPUForXML.sh > statistics/results/resultEvaluationRAMAndCPUForXML.txt
+
+echo "### EHRI institutions - RAM and CPU ###"
+bash runEvaluationRAMAndCPUForEHRIInstitutions.sh > statistics/results/resultEvaluationRAMAndCPUForInstitutions.txt

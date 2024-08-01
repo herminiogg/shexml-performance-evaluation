@@ -1,0 +1,525 @@
+Running different inputs experiment OLD
+test 1 java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q9.shexml -o=generated-data/shexml-q9.ttl 180021ms
+test 2 java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q9.shexml -o=generated-data/shexml-q9.ttl 180015ms
+test 3 java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q9.shexml -o=generated-data/shexml-q9.ttl 180016ms
+Average: java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q9.shexml -o=generated-data/shexml-q9.ttl 180017 ms
+test 1 java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q10.shexml -o=generated-data/shexml-q10.ttl 180014ms
+test 2 java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q10.shexml -o=generated-data/shexml-q10.ttl 180016ms
+test 3 java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q10.shexml -o=generated-data/shexml-q10.ttl 180014ms
+Average: java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q10.shexml -o=generated-data/shexml-q10.ttl 180014 ms
+test 1 java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q11.shexml -o=generated-data/shexml-q11.ttl 180018ms
+test 2 java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q11.shexml -o=generated-data/shexml-q11.ttl 180013ms
+test 3 java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q11.shexml -o=generated-data/shexml-q11.ttl 180017ms
+Average: java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q11.shexml -o=generated-data/shexml-q11.ttl 180016 ms
+test 1 java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12.shexml -o=generated-data/shexml-q12.ttl 180016ms
+test 2 java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12.shexml -o=generated-data/shexml-q12.ttl 180017ms
+test 3 java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12.shexml -o=generated-data/shexml-q12.ttl 180016ms
+Average: java  -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12.shexml -o=generated-data/shexml-q12.ttl 180016 ms
+test 1 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q1.rqg -l INFO 1714ms
+test 2 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q1.rqg -l INFO 1512ms
+test 3 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q1.rqg -l INFO 1374ms
+Average: java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q1.rqg -l INFO 1533 ms
+test 1 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q2.rqg -l INFO 1388ms
+test 2 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q2.rqg -l INFO 1436ms
+test 3 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q2.rqg -l INFO 1438ms
+Average: java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q2.rqg -l INFO 1420 ms
+test 1 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q3.rqg -l INFO 1554ms
+test 2 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q3.rqg -l INFO 1361ms
+test 3 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q3.rqg -l INFO 1400ms
+Average: java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q3.rqg -l INFO 1438 ms
+test 1 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q4.rqg -l INFO 1243ms
+test 2 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q4.rqg -l INFO 1277ms
+test 3 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q4.rqg -l INFO 1374ms
+Average: java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q4.rqg -l INFO 1298 ms
+test 1 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q5.rqg -l INFO 1287ms
+test 2 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q5.rqg -l INFO 1204ms
+test 3 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q5.rqg -l INFO 1248ms
+Average: java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q5.rqg -l INFO 1246 ms
+test 1 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q6.rqg -l INFO 1279ms
+test 2 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q6.rqg -l INFO 1265ms
+test 3 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q6.rqg -l INFO 1258ms
+Average: java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q6.rqg -l INFO 1267 ms
+test 1 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q7.rqg -l INFO 1291ms
+test 2 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q7.rqg -l INFO 1293ms
+test 3 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q7.rqg -l INFO 1379ms
+Average: java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q7.rqg -l INFO 1321 ms
+test 1 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q8.rqg -l INFO 1267ms
+test 2 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q8.rqg -l INFO 1205ms
+test 3 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q8.rqg -l INFO 1233ms
+Average: java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q8.rqg -l INFO 1235 ms
+test 1 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q9.rqg -fo TTL -o generated-data/sparql-generate-q9.ttl -l INFO 1763ms
+test 2 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q9.rqg -fo TTL -o generated-data/sparql-generate-q9.ttl -l INFO 1733ms
+test 3 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q9.rqg -fo TTL -o generated-data/sparql-generate-q9.ttl -l INFO 1818ms
+Average: java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q9.rqg -fo TTL -o generated-data/sparql-generate-q9.ttl -l INFO 1771 ms
+test 1 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q10.rqg -fo TTL -o generated-data/sparql-generate-q10.ttl -l INFO 2219ms
+test 2 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q10.rqg -fo TTL -o generated-data/sparql-generate-q10.ttl -l INFO 2177ms
+test 3 java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q10.rqg -fo TTL -o generated-data/sparql-generate-q10.ttl -l INFO 2320ms
+Average: java   -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q10.rqg -fo TTL -o generated-data/sparql-generate-q10.ttl -l INFO 2238 ms
+test 1 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q11.rqg -fo TTL -o generated-data/sparql-generate-q11.ttl -l INFO 3565ms
+test 2 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q11.rqg -fo TTL -o generated-data/sparql-generate-q11.ttl -l INFO 3424ms
+test 3 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q11.rqg -fo TTL -o generated-data/sparql-generate-q11.ttl -l INFO 3464ms
+Average: java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q11.rqg -fo TTL -o generated-data/sparql-generate-q11.ttl -l INFO 3484 ms
+test 1 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12.rqg -fo TTL -o generated-data/sparql-generate-q12.ttl -l INFO 1423ms
+test 2 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12.rqg -fo TTL -o generated-data/sparql-generate-q12.ttl -l INFO 1628ms
+test 3 java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12.rqg -fo TTL -o generated-data/sparql-generate-q12.ttl -l INFO 1471ms
+Average: java  -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12.rqg -fo TTL -o generated-data/sparql-generate-q12.ttl -l INFO 1507 ms
+test 1 java  -jar bin/rmlmapper.jar -m rml-mappings/m1.ttl -s turtle -o generated-data/rml-m1.ttl 1772ms
+test 2 java  -jar bin/rmlmapper.jar -m rml-mappings/m1.ttl -s turtle -o generated-data/rml-m1.ttl 1684ms
+test 3 java  -jar bin/rmlmapper.jar -m rml-mappings/m1.ttl -s turtle -o generated-data/rml-m1.ttl 1588ms
+Average: java  -jar bin/rmlmapper.jar -m rml-mappings/m1.ttl -s turtle -o generated-data/rml-m1.ttl 1681 ms
+test 1 java  -jar bin/rmlmapper.jar -m rml-mappings/m2.ttl -s turtle -o generated-data/rml-m2.ttl 2033ms
+test 2 java  -jar bin/rmlmapper.jar -m rml-mappings/m2.ttl -s turtle -o generated-data/rml-m2.ttl 2136ms
+test 3 java  -jar bin/rmlmapper.jar -m rml-mappings/m2.ttl -s turtle -o generated-data/rml-m2.ttl 2091ms
+Average: java  -jar bin/rmlmapper.jar -m rml-mappings/m2.ttl -s turtle -o generated-data/rml-m2.ttl 2086 ms
+test 1 java  -jar bin/rmlmapper.jar -m rml-mappings/m3.ttl -s turtle -o generated-data/rml-m3.ttl 3419ms
+test 2 java  -jar bin/rmlmapper.jar -m rml-mappings/m3.ttl -s turtle -o generated-data/rml-m3.ttl 3181ms
+test 3 java  -jar bin/rmlmapper.jar -m rml-mappings/m3.ttl -s turtle -o generated-data/rml-m3.ttl 3296ms
+Average: java  -jar bin/rmlmapper.jar -m rml-mappings/m3.ttl -s turtle -o generated-data/rml-m3.ttl 3298 ms
+test 1 java  -jar bin/rmlmapper.jar -m rml-mappings/m4.ttl -s turtle -o generated-data/rml-m4.ttl 1212ms
+test 2 java  -jar bin/rmlmapper.jar -m rml-mappings/m4.ttl -s turtle -o generated-data/rml-m4.ttl 1194ms
+test 3 java  -jar bin/rmlmapper.jar -m rml-mappings/m4.ttl -s turtle -o generated-data/rml-m4.ttl 1338ms
+Average: java  -jar bin/rmlmapper.jar -m rml-mappings/m4.ttl -s turtle -o generated-data/rml-m4.ttl 1248 ms
+test 1 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q1.rqg 1803ms
+test 2 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q1.rqg 1621ms
+test 3 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q1.rqg 1392ms
+Average: java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q1.rqg 1605 ms
+test 1 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q2.rqg 1599ms
+test 2 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q2.rqg 1489ms
+test 3 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q2.rqg 1721ms
+Average: java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q2.rqg 1603 ms
+test 1 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q3.rqg 1607ms
+test 2 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q3.rqg 1726ms
+test 3 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q3.rqg 1606ms
+Average: java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q3.rqg 1646 ms
+test 1 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q4.rqg 1906ms
+test 2 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q4.rqg 1438ms
+test 3 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q4.rqg 1425ms
+Average: java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q4.rqg 1589 ms
+test 1 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q5.rqg 1364ms
+test 2 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q5.rqg 1369ms
+test 3 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q5.rqg 1350ms
+Average: java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q5.rqg 1361 ms
+test 1 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q6.rqg 1367ms
+test 2 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q6.rqg 1390ms
+test 3 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q6.rqg 1349ms
+Average: java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q6.rqg 1368 ms
+test 1 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q7.rqg 1365ms
+test 2 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q7.rqg 1344ms
+test 3 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q7.rqg 1332ms
+Average: java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q7.rqg 1347 ms
+test 1 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q8.rqg 1353ms
+test 2 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q8.rqg 1310ms
+test 3 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q8.rqg 1347ms
+Average: java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q8.rqg 1336 ms
+test 1 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q9.rqg -f TTL -o generated-data/sparql-anything-q9.ttl 1962ms
+test 2 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q9.rqg -f TTL -o generated-data/sparql-anything-q9.ttl 2069ms
+test 3 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q9.rqg -f TTL -o generated-data/sparql-anything-q9.ttl 1948ms
+Average: java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q9.rqg -f TTL -o generated-data/sparql-anything-q9.ttl 1993 ms
+test 1 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q10.rqg -f TTL -o generated-data/sparql-anything-q10.ttl 2805ms
+test 2 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q10.rqg -f TTL -o generated-data/sparql-anything-q10.ttl 2768ms
+test 3 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q10.rqg -f TTL -o generated-data/sparql-anything-q10.ttl 2650ms
+Average: java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q10.rqg -f TTL -o generated-data/sparql-anything-q10.ttl 2741 ms
+test 1 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q11.rqg -f TTL -o generated-data/sparql-anything-q11.ttl 3587ms
+test 2 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q11.rqg -f TTL -o generated-data/sparql-anything-q11.ttl 4189ms
+test 3 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q11.rqg -f TTL -o generated-data/sparql-anything-q11.ttl 3780ms
+Average: java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q11.rqg -f TTL -o generated-data/sparql-anything-q11.ttl 3852 ms
+test 1 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q12.rqg -f TTL -o generated-data/sparql-anything-q12.ttl 1778ms
+test 2 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q12.rqg -f TTL -o generated-data/sparql-anything-q12.ttl 1584ms
+test 3 java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q12.rqg -f TTL -o generated-data/sparql-anything-q12.ttl 1472ms
+Average: java  -jar bin/sparql-anything-0.4.1.jar -q sparql-anything-queries/q12.rqg -f TTL -o generated-data/sparql-anything-q12.ttl 1611 ms
+Running different inputs experiment NEW
+test 1 java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q9.shexml -o=generated-data/shexml-q9.ttl 3791ms
+test 2 java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q9.shexml -o=generated-data/shexml-q9.ttl 3337ms
+test 3 java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q9.shexml -o=generated-data/shexml-q9.ttl 3374ms
+Average: java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q9.shexml -o=generated-data/shexml-q9.ttl 3500 ms
+test 1 java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q10.shexml -o=generated-data/shexml-q10.ttl 3741ms
+test 2 java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q10.shexml -o=generated-data/shexml-q10.ttl 3978ms
+test 3 java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q10.shexml -o=generated-data/shexml-q10.ttl 3928ms
+Average: java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q10.shexml -o=generated-data/shexml-q10.ttl 3882 ms
+test 1 java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q11.shexml -o=generated-data/shexml-q11.ttl 6596ms
+test 2 java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q11.shexml -o=generated-data/shexml-q11.ttl 5817ms
+test 3 java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q11.shexml -o=generated-data/shexml-q11.ttl 7001ms
+Average: java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q11.shexml -o=generated-data/shexml-q11.ttl 6471 ms
+test 1 java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12.shexml -o=generated-data/shexml-q12.ttl 2976ms
+test 2 java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12.shexml -o=generated-data/shexml-q12.ttl 2706ms
+test 3 java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12.shexml -o=generated-data/shexml-q12.ttl 2579ms
+Average: java  -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12.shexml -o=generated-data/shexml-q12.ttl 2753 ms
+test 1 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q1.rqg -l INFO 2009ms
+test 2 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q1.rqg -l INFO 2140ms
+test 3 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q1.rqg -l INFO 1806ms
+Average: java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q1.rqg -l INFO 1985 ms
+test 1 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q2.rqg -l INFO 1936ms
+test 2 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q2.rqg -l INFO 1913ms
+test 3 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q2.rqg -l INFO 1913ms
+Average: java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q2.rqg -l INFO 1920 ms
+test 1 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q3.rqg -l INFO 1826ms
+test 2 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q3.rqg -l INFO 1875ms
+test 3 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q3.rqg -l INFO 1901ms
+Average: java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q3.rqg -l INFO 1867 ms
+test 1 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q4.rqg -l INFO 1719ms
+test 2 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q4.rqg -l INFO 1654ms
+test 3 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q4.rqg -l INFO 1625ms
+Average: java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q4.rqg -l INFO 1666 ms
+test 1 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q5.rqg -l INFO 1679ms
+test 2 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q5.rqg -l INFO 1712ms
+test 3 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q5.rqg -l INFO 1662ms
+Average: java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q5.rqg -l INFO 1684 ms
+test 1 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q6.rqg -l INFO 1775ms
+test 2 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q6.rqg -l INFO 1798ms
+test 3 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q6.rqg -l INFO 1623ms
+Average: java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q6.rqg -l INFO 1732 ms
+test 1 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q7.rqg -l INFO 1797ms
+test 2 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q7.rqg -l INFO 1723ms
+test 3 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q7.rqg -l INFO 1674ms
+Average: java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q7.rqg -l INFO 1731 ms
+test 1 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q8.rqg -l INFO 1675ms
+test 2 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q8.rqg -l INFO 1735ms
+test 3 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q8.rqg -l INFO 1798ms
+Average: java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q8.rqg -l INFO 1736 ms
+test 1 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q9.rqg -fo TTL -o generated-data/sparql-generate-q9.ttl -l INFO 2220ms
+test 2 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q9.rqg -fo TTL -o generated-data/sparql-generate-q9.ttl -l INFO 2244ms
+test 3 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q9.rqg -fo TTL -o generated-data/sparql-generate-q9.ttl -l INFO 2176ms
+Average: java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q9.rqg -fo TTL -o generated-data/sparql-generate-q9.ttl -l INFO 2213 ms
+test 1 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q10.rqg -fo TTL -o generated-data/sparql-generate-q10.ttl -l INFO 2629ms
+test 2 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q10.rqg -fo TTL -o generated-data/sparql-generate-q10.ttl -l INFO 2570ms
+test 3 java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q10.rqg -fo TTL -o generated-data/sparql-generate-q10.ttl -l INFO 2685ms
+Average: java   -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q10.rqg -fo TTL -o generated-data/sparql-generate-q10.ttl -l INFO 2628 ms
+test 1 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q11.rqg -fo TTL -o generated-data/sparql-generate-q11.ttl -l INFO 3578ms
+test 2 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q11.rqg -fo TTL -o generated-data/sparql-generate-q11.ttl -l INFO 3870ms
+test 3 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q11.rqg -fo TTL -o generated-data/sparql-generate-q11.ttl -l INFO 4001ms
+Average: java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q11.rqg -fo TTL -o generated-data/sparql-generate-q11.ttl -l INFO 3816 ms
+test 1 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12.rqg -fo TTL -o generated-data/sparql-generate-q12.ttl -l INFO 1934ms
+test 2 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12.rqg -fo TTL -o generated-data/sparql-generate-q12.ttl -l INFO 2181ms
+test 3 java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12.rqg -fo TTL -o generated-data/sparql-generate-q12.ttl -l INFO 1787ms
+Average: java  -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12.rqg -fo TTL -o generated-data/sparql-generate-q12.ttl -l INFO 1967 ms
+test 1 java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m1.ttl -s turtle -o generated-data/rml-m1.ttl 3647ms
+test 2 java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m1.ttl -s turtle -o generated-data/rml-m1.ttl 3370ms
+test 3 java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m1.ttl -s turtle -o generated-data/rml-m1.ttl 3385ms
+Average: java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m1.ttl -s turtle -o generated-data/rml-m1.ttl 3467 ms
+test 1 java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m2.ttl -s turtle -o generated-data/rml-m2.ttl 4107ms
+test 2 java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m2.ttl -s turtle -o generated-data/rml-m2.ttl 4088ms
+test 3 java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m2.ttl -s turtle -o generated-data/rml-m2.ttl 4174ms
+Average: java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m2.ttl -s turtle -o generated-data/rml-m2.ttl 4123 ms
+test 1 java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m3.ttl -s turtle -o generated-data/rml-m3.ttl 5393ms
+test 2 java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m3.ttl -s turtle -o generated-data/rml-m3.ttl 5266ms
+test 3 java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m3.ttl -s turtle -o generated-data/rml-m3.ttl 5119ms
+Average: java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m3.ttl -s turtle -o generated-data/rml-m3.ttl 5259 ms
+test 1 java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4.ttl -s turtle -o generated-data/rml-m4.ttl 2681ms
+test 2 java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4.ttl -s turtle -o generated-data/rml-m4.ttl 2979ms
+test 3 java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4.ttl -s turtle -o generated-data/rml-m4.ttl 2703ms
+Average: java  -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4.ttl -s turtle -o generated-data/rml-m4.ttl 2787 ms
+test 1 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q1.rqg 1691ms
+test 2 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q1.rqg 1687ms
+test 3 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q1.rqg 1658ms
+Average: java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q1.rqg 1678 ms
+test 1 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q2.rqg 1853ms
+test 2 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q2.rqg 1683ms
+test 3 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q2.rqg 1751ms
+Average: java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q2.rqg 1762 ms
+test 1 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q3.rqg 1578ms
+test 2 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q3.rqg 1754ms
+test 3 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q3.rqg 1767ms
+Average: java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q3.rqg 1699 ms
+test 1 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q4.rqg 1428ms
+test 2 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q4.rqg 1503ms
+test 3 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q4.rqg 1569ms
+Average: java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q4.rqg 1500 ms
+test 1 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q5.rqg 1438ms
+test 2 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q5.rqg 1726ms
+test 3 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q5.rqg 1501ms
+Average: java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q5.rqg 1555 ms
+test 1 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q6.rqg 1676ms
+test 2 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q6.rqg 1578ms
+test 3 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q6.rqg 1522ms
+Average: java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q6.rqg 1592 ms
+test 1 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q7.rqg 1455ms
+test 2 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q7.rqg 1599ms
+test 3 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q7.rqg 1531ms
+Average: java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q7.rqg 1528 ms
+test 1 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q8.rqg 1726ms
+test 2 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q8.rqg 1658ms
+test 3 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q8.rqg 1490ms
+Average: java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q8.rqg 1624 ms
+test 1 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q9.rqg -f TTL -o generated-data/sparql-anything-q9.ttl 1602ms
+test 2 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q9.rqg -f TTL -o generated-data/sparql-anything-q9.ttl 1662ms
+test 3 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q9.rqg -f TTL -o generated-data/sparql-anything-q9.ttl 1677ms
+Average: java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q9.rqg -f TTL -o generated-data/sparql-anything-q9.ttl 1647 ms
+test 1 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q10.rqg -f TTL -o generated-data/sparql-anything-q10.ttl 2863ms
+test 2 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q10.rqg -f TTL -o generated-data/sparql-anything-q10.ttl 2774ms
+test 3 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q10.rqg -f TTL -o generated-data/sparql-anything-q10.ttl 3017ms
+Average: java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q10.rqg -f TTL -o generated-data/sparql-anything-q10.ttl 2884 ms
+test 1 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q11.rqg -f TTL -o generated-data/sparql-anything-q11.ttl 4189ms
+test 2 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q11.rqg -f TTL -o generated-data/sparql-anything-q11.ttl 3968ms
+test 3 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q11.rqg -f TTL -o generated-data/sparql-anything-q11.ttl 3875ms
+Average: java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q11.rqg -f TTL -o generated-data/sparql-anything-q11.ttl 4010 ms
+test 1 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q12.rqg -f TTL -o generated-data/sparql-anything-q12.ttl 1896ms
+test 2 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q12.rqg -f TTL -o generated-data/sparql-anything-q12.ttl 1848ms
+test 3 java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q12.rqg -f TTL -o generated-data/sparql-anything-q12.ttl 1631ms
+Average: java  -jar bin_new/sparql-anything-0.9.0.jar -q sparql-anything-queries/q12.rqg -f TTL -o generated-data/sparql-anything-q12.ttl 1791 ms
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------< com.github.spice-h2020:sparql.anything.experiment >----------
+[INFO] Building sparql.anything.experiment 0.3.2-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ sparql.anything.experiment ---
+[INFO] Deleting /mnt/c/Users/Herminio/Git/shexml-performance-evaluation/sparql-anything-experiment/sparql.anything.experiment/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ sparql.anything.experiment ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ sparql.anything.experiment ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /mnt/c/Users/Herminio/Git/shexml-performance-evaluation/sparql-anything-experiment/sparql.anything.experiment/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ sparql.anything.experiment ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /mnt/c/Users/Herminio/Git/shexml-performance-evaluation/sparql-anything-experiment/sparql.anything.experiment/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ sparql.anything.experiment ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ sparql.anything.experiment ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ sparql.anything.experiment ---
+[INFO] Building jar: /mnt/c/Users/Herminio/Git/shexml-performance-evaluation/sparql-anything-experiment/sparql.anything.experiment/target/sparql.anything.experiment-0.3.2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ sparql.anything.experiment ---
+[INFO] Installing /mnt/c/Users/Herminio/Git/shexml-performance-evaluation/sparql-anything-experiment/sparql.anything.experiment/target/sparql.anything.experiment-0.3.2-SNAPSHOT.jar to /home/herminio/.m2/repository/com/github/spice-h2020/sparql.anything.experiment/0.3.2-SNAPSHOT/sparql.anything.experiment-0.3.2-SNAPSHOT.jar
+[INFO] Installing /mnt/c/Users/Herminio/Git/shexml-performance-evaluation/sparql-anything-experiment/sparql.anything.experiment/pom.xml to /home/herminio/.m2/repository/com/github/spice-h2020/sparql.anything.experiment/0.3.2-SNAPSHOT/sparql.anything.experiment-0.3.2-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.346 s
+[INFO] Finished at: 2024-07-15T14:14:24+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------< com.github.spice-h2020:sparql.anything.experiment >----------
+[INFO] Building sparql.anything.experiment 0.3.2-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.1.0:java (default-cli) @ sparql.anything.experiment ---
+https://raw.githubusercontent.com/SPARQL-Anything/sparql.anything/main/experiment/data/COLLEZIONI_FONDO_GABINIO_MARZO_2017.json - 11404
+https://raw.githubusercontent.com/spice-h2020/sparql.anything/main/experiment/data/COLLEZIONI_GAM.json - 29450
+https://raw.githubusercontent.com/spice-h2020/sparql.anything/main/experiment/data/COLLEZIONI_MAO.json - 2045
+Generated array of length 42899
+1000000
+Computing 10
+10
+Written
+Computing 100
+100
+Written
+Computing 1000
+1000
+Written
+Computing 10000
+10000
+Written
+Computing 100000
+100000
+Written
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.459 s
+[INFO] Finished at: 2024-07-15T14:14:41+02:00
+[INFO] ------------------------------------------------------------------------
+RUN increasing input experiment
+test 1 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_10.shexml -o=generated-data/shexml-q12_10.ttl 1703ms
+test 2 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_10.shexml -o=generated-data/shexml-q12_10.ttl 1726ms
+test 3 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_10.shexml -o=generated-data/shexml-q12_10.ttl 1534ms
+Average: java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_10.shexml -o=generated-data/shexml-q12_10.ttl 1654 ms
+test 1 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_100.shexml -o=generated-data/shexml-q12_100.ttl 2712ms
+test 2 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_100.shexml -o=generated-data/shexml-q12_100.ttl 2676ms
+test 3 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_100.shexml -o=generated-data/shexml-q12_100.ttl 2753ms
+Average: java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_100.shexml -o=generated-data/shexml-q12_100.ttl 2713 ms
+test 1 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_1000.shexml -o=generated-data/shexml-q12_1000.ttl 59088ms
+test 2 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_1000.shexml -o=generated-data/shexml-q12_1000.ttl 57093ms
+test 3 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_1000.shexml -o=generated-data/shexml-q12_1000.ttl 55200ms
+Average: java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_1000.shexml -o=generated-data/shexml-q12_1000.ttl 57127 ms
+test 1 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_10000.shexml -o=generated-data/shexml-q12_10000.ttl 180018ms
+test 2 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_10000.shexml -o=generated-data/shexml-q12_10000.ttl 180017ms
+test 3 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_10000.shexml -o=generated-data/shexml-q12_10000.ttl 180018ms
+Average: java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_10000.shexml -o=generated-data/shexml-q12_10000.ttl 180017 ms
+test 1 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_100000.shexml -o=generated-data/shexml-q12_100000.ttl 180021ms
+test 2 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_100000.shexml -o=generated-data/shexml-q12_100000.ttl 180029ms
+test 3 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_100000.shexml -o=generated-data/shexml-q12_100000.ttl 180024ms
+Average: java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_100000.shexml -o=generated-data/shexml-q12_100000.ttl 180024 ms
+test 1 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_1000000.shexml -o=generated-data/shexml-q12_1000000.ttl 180027ms
+test 2 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_1000000.shexml -o=generated-data/shexml-q12_1000000.ttl 180136ms
+test 3 java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_1000000.shexml -o=generated-data/shexml-q12_1000000.ttl 180029ms
+Average: java -Xmx10g -jar bin/ShExML-v0.2.7.jar -m=shexml-mappings/q12_1000000.shexml -o=generated-data/shexml-q12_1000000.ttl 180064 ms
+test 1 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_10.rqg -f TTL -o generated-data/sparql-anything-q12_10.ttl 1172ms
+test 2 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_10.rqg -f TTL -o generated-data/sparql-anything-q12_10.ttl 1086ms
+test 3 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_10.rqg -f TTL -o generated-data/sparql-anything-q12_10.ttl 1179ms
+Average: java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_10.rqg -f TTL -o generated-data/sparql-anything-q12_10.ttl 1145 ms
+test 1 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_100.rqg -f TTL -o generated-data/sparql-anything-q12_100.ttl 1286ms
+test 2 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_100.rqg -f TTL -o generated-data/sparql-anything-q12_100.ttl 1207ms
+test 3 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_100.rqg -f TTL -o generated-data/sparql-anything-q12_100.ttl 1130ms
+Average: java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_100.rqg -f TTL -o generated-data/sparql-anything-q12_100.ttl 1207 ms
+test 1 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_1000.rqg -f TTL -o generated-data/sparql-anything-q12_1000.ttl 1356ms
+test 2 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_1000.rqg -f TTL -o generated-data/sparql-anything-q12_1000.ttl 1437ms
+test 3 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_1000.rqg -f TTL -o generated-data/sparql-anything-q12_1000.ttl 1284ms
+Average: java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_1000.rqg -f TTL -o generated-data/sparql-anything-q12_1000.ttl 1359 ms
+test 1 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_10000.rqg -f TTL -o generated-data/sparql-anything-q12_10000.ttl 2436ms
+test 2 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_10000.rqg -f TTL -o generated-data/sparql-anything-q12_10000.ttl 2347ms
+test 3 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_10000.rqg -f TTL -o generated-data/sparql-anything-q12_10000.ttl 2257ms
+Average: java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_10000.rqg -f TTL -o generated-data/sparql-anything-q12_10000.ttl 2346 ms
+test 1 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_100000.rqg -f TTL -o generated-data/sparql-anything-q12_100000.ttl 8443ms
+test 2 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_100000.rqg -f TTL -o generated-data/sparql-anything-q12_100000.ttl 8305ms
+test 3 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_100000.rqg -f TTL -o generated-data/sparql-anything-q12_100000.ttl 7672ms
+Average: java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_100000.rqg -f TTL -o generated-data/sparql-anything-q12_100000.ttl 8140 ms
+test 1 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_1000000.rqg -f TTL -o generated-data/sparql-anything-q12_1000000.ttl 71348ms
+test 2 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_1000000.rqg -f TTL -o generated-data/sparql-anything-q12_1000000.ttl 80283ms
+test 3 java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_1000000.rqg -f TTL -o generated-data/sparql-anything-q12_1000000.ttl 73142ms
+Average: java -Xmx10g -jar bin/sparql-anything-0.4.1.jar  -q sparql-anything-queries/q12_1000000.rqg -f TTL -o generated-data/sparql-anything-q12_1000000.ttl 74924 ms
+test 1 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_10.ttl -s turtle -o generated-data/rml-m4_10.ttl 1018ms
+test 2 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_10.ttl -s turtle -o generated-data/rml-m4_10.ttl 792ms
+test 3 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_10.ttl -s turtle -o generated-data/rml-m4_10.ttl 834ms
+Average: java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_10.ttl -s turtle -o generated-data/rml-m4_10.ttl 881 ms
+test 1 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_100.ttl -s turtle -o generated-data/rml-m4_100.ttl 1026ms
+test 2 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_100.ttl -s turtle -o generated-data/rml-m4_100.ttl 892ms
+test 3 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_100.ttl -s turtle -o generated-data/rml-m4_100.ttl 1032ms
+Average: java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_100.ttl -s turtle -o generated-data/rml-m4_100.ttl 983 ms
+test 1 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_1000.ttl -s turtle -o generated-data/rml-m4_1000.ttl 1119ms
+test 2 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_1000.ttl -s turtle -o generated-data/rml-m4_1000.ttl 1268ms
+test 3 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_1000.ttl -s turtle -o generated-data/rml-m4_1000.ttl 1163ms
+Average: java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_1000.ttl -s turtle -o generated-data/rml-m4_1000.ttl 1183 ms
+test 1 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_10000.ttl -s turtle -o generated-data/rml-m4_10000.ttl 2422ms
+test 2 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_10000.ttl -s turtle -o generated-data/rml-m4_10000.ttl 2072ms
+test 3 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_10000.ttl -s turtle -o generated-data/rml-m4_10000.ttl 1975ms
+Average: java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_10000.ttl -s turtle -o generated-data/rml-m4_10000.ttl 2156 ms
+test 1 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_100000.ttl -s turtle -o generated-data/rml-m4_100000.ttl 6509ms
+test 2 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_100000.ttl -s turtle -o generated-data/rml-m4_100000.ttl 6627ms
+test 3 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_100000.ttl -s turtle -o generated-data/rml-m4_100000.ttl 6491ms
+Average: java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_100000.ttl -s turtle -o generated-data/rml-m4_100000.ttl 6542 ms
+test 1 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_1000000.ttl -s turtle -o generated-data/rml-m4_1000000.ttl 49169ms
+test 2 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_1000000.ttl -s turtle -o generated-data/rml-m4_1000000.ttl 53477ms
+test 3 java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_1000000.ttl -s turtle -o generated-data/rml-m4_1000000.ttl 54210ms
+Average: java -Xmx10g -jar bin/rmlmapper.jar -m rml-mappings/m4_1000000.ttl -s turtle -o generated-data/rml-m4_1000000.ttl 52285 ms
+test 1 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_10.rqg -fo TTL -o generated-data/sparql-generate-q12_10.ttl -l INFO 1250ms
+test 2 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_10.rqg -fo TTL -o generated-data/sparql-generate-q12_10.ttl -l INFO 1024ms
+test 3 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_10.rqg -fo TTL -o generated-data/sparql-generate-q12_10.ttl -l INFO 1069ms
+Average: java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_10.rqg -fo TTL -o generated-data/sparql-generate-q12_10.ttl -l INFO 1114 ms
+test 1 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_100.rqg -fo TTL -o generated-data/sparql-generate-q12_100.ttl -l INFO 1179ms
+test 2 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_100.rqg -fo TTL -o generated-data/sparql-generate-q12_100.ttl -l INFO 1197ms
+test 3 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_100.rqg -fo TTL -o generated-data/sparql-generate-q12_100.ttl -l INFO 1243ms
+Average: java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_100.rqg -fo TTL -o generated-data/sparql-generate-q12_100.ttl -l INFO 1206 ms
+test 1 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_1000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000.ttl -l INFO 1428ms
+test 2 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_1000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000.ttl -l INFO 1473ms
+test 3 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_1000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000.ttl -l INFO 1392ms
+Average: java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_1000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000.ttl -l INFO 1431 ms
+test 1 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_10000.rqg -fo TTL -o generated-data/sparql-generate-q12_10000.ttl -l INFO 2266ms
+test 2 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_10000.rqg -fo TTL -o generated-data/sparql-generate-q12_10000.ttl -l INFO 2304ms
+test 3 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_10000.rqg -fo TTL -o generated-data/sparql-generate-q12_10000.ttl -l INFO 2668ms
+Average: java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_10000.rqg -fo TTL -o generated-data/sparql-generate-q12_10000.ttl -l INFO 2412 ms
+test 1 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_100000.rqg -fo TTL -o generated-data/sparql-generate-q12_100000.ttl -l INFO 6760ms
+test 2 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_100000.rqg -fo TTL -o generated-data/sparql-generate-q12_100000.ttl -l INFO 6137ms
+test 3 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_100000.rqg -fo TTL -o generated-data/sparql-generate-q12_100000.ttl -l INFO 6510ms
+Average: java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_100000.rqg -fo TTL -o generated-data/sparql-generate-q12_100000.ttl -l INFO 6469 ms
+test 1 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_1000000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000000.ttl -l INFO 90883ms
+test 2 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_1000000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000000.ttl -l INFO 70919ms
+test 3 java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_1000000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000000.ttl -l INFO 80400ms
+Average: java -Xmx10g -jar bin/sparql-generate-2.0.9.jar -q sparql-generate-queries/q12_1000000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000000.ttl -l INFO 80734 ms
+RUN increaseing input experiment NEW VERSIONS
+bin_new not exists
+test 1 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_10.shexml -o=generated-data/shexml-q12_10.ttl 1594ms
+test 2 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_10.shexml -o=generated-data/shexml-q12_10.ttl 1461ms
+test 3 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_10.shexml -o=generated-data/shexml-q12_10.ttl 1521ms
+Average: java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_10.shexml -o=generated-data/shexml-q12_10.ttl 1525 ms
+test 1 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_100.shexml -o=generated-data/shexml-q12_100.ttl 1660ms
+test 2 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_100.shexml -o=generated-data/shexml-q12_100.ttl 1640ms
+test 3 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_100.shexml -o=generated-data/shexml-q12_100.ttl 1632ms
+Average: java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_100.shexml -o=generated-data/shexml-q12_100.ttl 1644 ms
+test 1 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_1000.shexml -o=generated-data/shexml-q12_1000.ttl 1995ms
+test 2 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_1000.shexml -o=generated-data/shexml-q12_1000.ttl 2451ms
+test 3 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_1000.shexml -o=generated-data/shexml-q12_1000.ttl 2028ms
+Average: java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_1000.shexml -o=generated-data/shexml-q12_1000.ttl 2158 ms
+test 1 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_10000.shexml -o=generated-data/shexml-q12_10000.ttl 3442ms
+test 2 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_10000.shexml -o=generated-data/shexml-q12_10000.ttl 3571ms
+test 3 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_10000.shexml -o=generated-data/shexml-q12_10000.ttl 3617ms
+Average: java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_10000.shexml -o=generated-data/shexml-q12_10000.ttl 3543 ms
+test 1 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_100000.shexml -o=generated-data/shexml-q12_100000.ttl 11123ms
+test 2 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_100000.shexml -o=generated-data/shexml-q12_100000.ttl 11078ms
+test 3 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_100000.shexml -o=generated-data/shexml-q12_100000.ttl 11274ms
+Average: java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_100000.shexml -o=generated-data/shexml-q12_100000.ttl 11158 ms
+test 1 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_1000000.shexml -o=generated-data/shexml-q12_1000000.ttl 66231ms
+test 2 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_1000000.shexml -o=generated-data/shexml-q12_1000000.ttl 76412ms
+test 3 java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_1000000.shexml -o=generated-data/shexml-q12_1000000.ttl 66051ms
+Average: java -Xmx10g -jar bin_new/ShExML-v0.5.1.jar -m=shexml-mappings/q12_1000000.shexml -o=generated-data/shexml-q12_1000000.ttl 69564 ms
+test 1 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_10.rqg -f TTL -o generated-data/sparql-anything-q12_10.ttl 2029ms
+test 2 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_10.rqg -f TTL -o generated-data/sparql-anything-q12_10.ttl 1375ms
+test 3 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_10.rqg -f TTL -o generated-data/sparql-anything-q12_10.ttl 1472ms
+Average: java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_10.rqg -f TTL -o generated-data/sparql-anything-q12_10.ttl 1625 ms
+test 1 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_100.rqg -f TTL -o generated-data/sparql-anything-q12_100.ttl 1431ms
+test 2 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_100.rqg -f TTL -o generated-data/sparql-anything-q12_100.ttl 1605ms
+test 3 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_100.rqg -f TTL -o generated-data/sparql-anything-q12_100.ttl 1526ms
+Average: java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_100.rqg -f TTL -o generated-data/sparql-anything-q12_100.ttl 1520 ms
+test 1 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_1000.rqg -f TTL -o generated-data/sparql-anything-q12_1000.ttl 1805ms
+test 2 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_1000.rqg -f TTL -o generated-data/sparql-anything-q12_1000.ttl 1661ms
+test 3 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_1000.rqg -f TTL -o generated-data/sparql-anything-q12_1000.ttl 1767ms
+Average: java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_1000.rqg -f TTL -o generated-data/sparql-anything-q12_1000.ttl 1744 ms
+test 1 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_10000.rqg -f TTL -o generated-data/sparql-anything-q12_10000.ttl 2898ms
+test 2 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_10000.rqg -f TTL -o generated-data/sparql-anything-q12_10000.ttl 2569ms
+test 3 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_10000.rqg -f TTL -o generated-data/sparql-anything-q12_10000.ttl 2998ms
+Average: java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_10000.rqg -f TTL -o generated-data/sparql-anything-q12_10000.ttl 2821 ms
+test 1 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_100000.rqg -f TTL -o generated-data/sparql-anything-q12_100000.ttl 9447ms
+test 2 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_100000.rqg -f TTL -o generated-data/sparql-anything-q12_100000.ttl 8207ms
+test 3 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_100000.rqg -f TTL -o generated-data/sparql-anything-q12_100000.ttl 8220ms
+Average: java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_100000.rqg -f TTL -o generated-data/sparql-anything-q12_100000.ttl 8624 ms
+test 1 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_1000000.rqg -f TTL -o generated-data/sparql-anything-q12_1000000.ttl 69532ms
+test 2 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_1000000.rqg -f TTL -o generated-data/sparql-anything-q12_1000000.ttl 71345ms
+test 3 java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_1000000.rqg -f TTL -o generated-data/sparql-anything-q12_1000000.ttl 73022ms
+Average: java -Xmx10g -jar bin_new/sparql-anything-0.9.0.jar  -q sparql-anything-queries/q12_1000000.rqg -f TTL -o generated-data/sparql-anything-q12_1000000.ttl 71299 ms
+test 1 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_10.ttl -s turtle -o generated-data/rml-m4_10.ttl 2667ms
+test 2 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_10.ttl -s turtle -o generated-data/rml-m4_10.ttl 2486ms
+test 3 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_10.ttl -s turtle -o generated-data/rml-m4_10.ttl 2399ms
+Average: java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_10.ttl -s turtle -o generated-data/rml-m4_10.ttl 2517 ms
+test 1 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_100.ttl -s turtle -o generated-data/rml-m4_100.ttl 2448ms
+test 2 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_100.ttl -s turtle -o generated-data/rml-m4_100.ttl 2445ms
+test 3 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_100.ttl -s turtle -o generated-data/rml-m4_100.ttl 2327ms
+Average: java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_100.ttl -s turtle -o generated-data/rml-m4_100.ttl 2406 ms
+test 1 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_1000.ttl -s turtle -o generated-data/rml-m4_1000.ttl 2725ms
+test 2 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_1000.ttl -s turtle -o generated-data/rml-m4_1000.ttl 2522ms
+test 3 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_1000.ttl -s turtle -o generated-data/rml-m4_1000.ttl 2515ms
+Average: java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_1000.ttl -s turtle -o generated-data/rml-m4_1000.ttl 2587 ms
+test 1 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_10000.ttl -s turtle -o generated-data/rml-m4_10000.ttl 4693ms
+test 2 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_10000.ttl -s turtle -o generated-data/rml-m4_10000.ttl 4108ms
+test 3 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_10000.ttl -s turtle -o generated-data/rml-m4_10000.ttl 4066ms
+Average: java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_10000.ttl -s turtle -o generated-data/rml-m4_10000.ttl 4289 ms
+test 1 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_100000.ttl -s turtle -o generated-data/rml-m4_100000.ttl 9772ms
+test 2 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_100000.ttl -s turtle -o generated-data/rml-m4_100000.ttl 9919ms
+test 3 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_100000.ttl -s turtle -o generated-data/rml-m4_100000.ttl 9205ms
+Average: java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_100000.ttl -s turtle -o generated-data/rml-m4_100000.ttl 9632 ms
+test 1 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_1000000.ttl -s turtle -o generated-data/rml-m4_1000000.ttl 82881ms
+test 2 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_1000000.ttl -s turtle -o generated-data/rml-m4_1000000.ttl 84967ms
+test 3 java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_1000000.ttl -s turtle -o generated-data/rml-m4_1000000.ttl 81066ms
+Average: java -Xmx10g -jar bin_new/rmlmapper-6.5.1-r371-all.jar -m rml-mappings/m4_1000000.ttl -s turtle -o generated-data/rml-m4_1000000.ttl 82971 ms
+test 1 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_10.rqg -fo TTL -o generated-data/sparql-generate-q12_10.ttl -l INFO 1932ms
+test 2 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_10.rqg -fo TTL -o generated-data/sparql-generate-q12_10.ttl -l INFO 1606ms
+test 3 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_10.rqg -fo TTL -o generated-data/sparql-generate-q12_10.ttl -l INFO 1799ms
+Average: java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_10.rqg -fo TTL -o generated-data/sparql-generate-q12_10.ttl -l INFO 1779 ms
+test 1 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_100.rqg -fo TTL -o generated-data/sparql-generate-q12_100.ttl -l INFO 1573ms
+test 2 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_100.rqg -fo TTL -o generated-data/sparql-generate-q12_100.ttl -l INFO 1689ms
+test 3 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_100.rqg -fo TTL -o generated-data/sparql-generate-q12_100.ttl -l INFO 1733ms
+Average: java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_100.rqg -fo TTL -o generated-data/sparql-generate-q12_100.ttl -l INFO 1665 ms
+test 1 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_1000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000.ttl -l INFO 1968ms
+test 2 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_1000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000.ttl -l INFO 1847ms
+test 3 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_1000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000.ttl -l INFO 1889ms
+Average: java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_1000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000.ttl -l INFO 1901 ms
+test 1 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_10000.rqg -fo TTL -o generated-data/sparql-generate-q12_10000.ttl -l INFO 2587ms
+test 2 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_10000.rqg -fo TTL -o generated-data/sparql-generate-q12_10000.ttl -l INFO 2616ms
+test 3 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_10000.rqg -fo TTL -o generated-data/sparql-generate-q12_10000.ttl -l INFO 2658ms
+Average: java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_10000.rqg -fo TTL -o generated-data/sparql-generate-q12_10000.ttl -l INFO 2620 ms
+test 1 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_100000.rqg -fo TTL -o generated-data/sparql-generate-q12_100000.ttl -l INFO 6463ms
+test 2 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_100000.rqg -fo TTL -o generated-data/sparql-generate-q12_100000.ttl -l INFO 6828ms
+test 3 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_100000.rqg -fo TTL -o generated-data/sparql-generate-q12_100000.ttl -l INFO 6340ms
+Average: java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_100000.rqg -fo TTL -o generated-data/sparql-generate-q12_100000.ttl -l INFO 6543 ms
+test 1 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_1000000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000000.ttl -l INFO 57260ms
+test 2 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_1000000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000000.ttl -l INFO 58320ms
+test 3 java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_1000000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000000.ttl -l INFO 65030ms
+Average: java -Xmx10g -jar bin_new/sparql-generate-2.1.0.jar -q sparql-generate-queries/q12_1000000.rqg -fo TTL -o generated-data/sparql-generate-q12_1000000.ttl -l INFO 60203 ms

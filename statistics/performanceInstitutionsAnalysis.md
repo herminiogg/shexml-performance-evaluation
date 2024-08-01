@@ -114,33 +114,30 @@ post_hoc_results[, c(1,2,3,10)]
 # Plot
 
 ``` r
-dataset[(dataset$Engine == "ShExML-v0.4.0.jar" | dataset$Engine == "ShExML-v0.4.2.jar" | dataset$Engine == "ShExML-v0.5.1.jar"), ]  %>%
-    ggplot(aes(fill=Engine, y=Elapsed_time.ms., x=Engine)) +
-        geom_boxplot(
-            # Notch?
-            notch=TRUE,
-            notchwidth = 0.8,
-            
-            # custom outliers
-            outlier.colour="red",
-            outlier.fill="red",
-            outlier.size=3
-        )
+dataset[dataset$Engine=="ShExML-v0.3.2.jar", "Engine"] <- "ShExML-v0.3.2"
+dataset[dataset$Engine=="ShExML-v0.3.3.jar", "Engine"] <- "ShExML-v0.3.3"
+dataset[dataset$Engine=="ShExML-v0.4.0.jar", "Engine"] <- "ShExML-v0.4.0"
+dataset[dataset$Engine=="ShExML-v0.4.2.jar", "Engine"] <- "ShExML-v0.4.2"
+dataset[dataset$Engine=="ShExML-v0.5.1.jar", "Engine"] <- "ShExML-v0.5.1"
+
+dataset %>%
+    ggplot(aes(fill=Engine, x=Elapsed_time.ms., y=Engine)) +
+        geom_violin(trim=FALSE, scale="width") +
+        theme_minimal() + 
+        xlab("Elapsed Time (ms)") + 
+        coord_trans(x="log10")
 ```
 
-    ## Notch went outside hinges
-    ## ℹ Do you want `notch = FALSE`?
-
-![](peformanceInstitutionsAnalysis_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![](performanceInstitutionsAnalysis_files/figure-markdown_github/unnamed-chunk-7-1.png)
 
 ``` r
-dataset[(dataset$Engine == "ShExML-v0.4.0.jar" | dataset$Engine == "ShExML-v0.4.2.jar" | dataset$Engine == "ShExML-v0.5.1.jar"), ] %>%
+dataset[(dataset$Engine == "ShExML-v0.4.0" | dataset$Engine == "ShExML-v0.4.2" | dataset$Engine == "ShExML-v0.5.1"), ] %>%
   ggplot(aes(fill=Engine, color=Engine, x=Elapsed_time.ms.)) +
   geom_density(alpha = 0.15) +
   xlab("Elapsed time (ms)") +
   theme_minimal() + 
-  theme(legend.position="bottom") +
+  theme(legend.position="bottom", text = element_text(size=15)) +
   ggtitle("Distribution of the three most performant versions", "EHRI institutions (JSON) - By Engine")
 ```
 
-![](peformanceInstitutionsAnalysis_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](performanceInstitutionsAnalysis_files/figure-markdown_github/unnamed-chunk-8-1.png)

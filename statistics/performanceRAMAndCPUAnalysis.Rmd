@@ -1,0 +1,212 @@
+---
+title: "RAM and CPU Analysis ShExML across versions"
+author: "Herminio García-González"
+date: "2024-07-15"
+output: 
+  html_document: default
+  md_document:
+    variant: markdown_github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(summarytools)
+library(FSA)
+library(ggplot2)
+library(rstatix)
+library(rmarkdown)
+library(tidyr)
+```
+# Set up
+
+```{r}
+datasetJSON <- read.csv("C:/Users/Herminio/Git/shexml-performance-evaluation/statistics/results/resultEvaluationRAMAndCPUForJSON.csv", sep=';')[, 2:7]
+datasetJSON$Input <- "JSON"
+datasetJSON$CPU_Percentage=as.numeric(sub("%","", datasetJSON$CPU_Percentage))
+
+datasetXML <- read.csv("C:/Users/Herminio/Git/shexml-performance-evaluation/statistics/results/resultEvaluationRAMAndCPUForXML.csv", sep=';')[, 2:7]
+datasetXML$Input <- "XML"
+datasetXML$CPU_Percentage=as.numeric(sub("%","", datasetXML$CPU_Percentage))
+
+datasetInstitutions <- read.csv("C:/Users/Herminio/Git/shexml-performance-evaluation/statistics/results/resultEvaluationRAMAndCPUForInstitutions.csv", sep=';')[, 2:7]
+datasetInstitutions$Input <- "EHRI Institutions"
+datasetInstitutions$CPU_Percentage=as.numeric(sub("%","", datasetInstitutions$CPU_Percentage))
+```
+
+# Descriptive statistics
+```{r}
+stby(datasetJSON, datasetJSON$Engine, descr, round.digits=5, stats=c("mean", "med", "sd", "min", "max"))
+
+stby(datasetXML, datasetXML$Engine, descr, round.digits=5, stats=c("mean", "med", "sd", "min", "max"))
+
+stby(datasetInstitutions, datasetInstitutions$Engine, descr, round.digits=5, stats=c("mean", "med", "sd", "min", "max"))
+```
+
+# Merging
+```{r}
+dataset <- rbind(datasetInstitutions, datasetXML, datasetJSON)
+```
+
+# Test CPU_kernel.s. JSON
+```{r}
+by(datasetJSON$CPU_kernel.s., datasetJSON$Engine, shapiro.test)
+kruskal.test(CPU_kernel.s. ~ Engine , data = datasetJSON)
+dunnTest(CPU_kernel.s. ~ Engine , data = datasetJSON, method = "bh")
+post_hoc_results <- dunn_test(CPU_kernel.s. ~ Engine, data = datasetJSON, p.adjust.method = "BH")
+post_hoc_results$r <- post_hoc_results$statistic / sqrt(post_hoc_results$n1+post_hoc_results$n2)
+post_hoc_results[, c(1,2,3,10)]
+```
+
+# Test CPU_kernel.s. XML
+```{r}
+by(datasetXML$CPU_kernel.s., datasetXML$Engine, shapiro.test)
+kruskal.test(CPU_kernel.s. ~ Engine , data = datasetXML)
+dunnTest(CPU_kernel.s. ~ Engine , data = datasetXML, method = "bh")
+post_hoc_results <- dunn_test(CPU_kernel.s. ~ Engine, data = datasetXML, p.adjust.method = "BH")
+post_hoc_results$r <- post_hoc_results$statistic / sqrt(post_hoc_results$n1+post_hoc_results$n2)
+post_hoc_results[, c(1,2,3,10)]
+```
+# Test CPU_kernel.s. Institutions
+```{r}
+datasetInstitutionsFiltered <- datasetInstitutions[datasetInstitutions$Engine != "ShExML-v0.3.2", ]
+by(datasetInstitutionsFiltered$CPU_kernel.s., datasetInstitutionsFiltered$Engine, shapiro.test)
+kruskal.test(CPU_kernel.s. ~ Engine , data = datasetInstitutionsFiltered)
+dunnTest(CPU_kernel.s. ~ Engine , data = datasetInstitutionsFiltered, method = "bh")
+post_hoc_results <- dunn_test(CPU_kernel.s. ~ Engine, data = datasetInstitutionsFiltered, p.adjust.method = "BH")
+post_hoc_results$r <- post_hoc_results$statistic / sqrt(post_hoc_results$n1+post_hoc_results$n2)
+post_hoc_results[, c(1,2,3,10)]
+```
+
+# Plot CPU_kernel.s.
+```{r}
+dataset %>%
+    ggplot(aes(fill=Input, y=CPU_kernel.s., x=Engine)) +
+        geom_violin(trim=FALSE) + 
+        coord_trans(y="log10") +
+        theme_minimal() + 
+        ylab("CPU kernel time (s)") +
+        theme(legend.position="bottom", text = element_text(size=15))
+```
+# Test CPU_user.s. JSON
+```{r}
+by(datasetJSON$CPU_user.s., datasetJSON$Engine, shapiro.test)
+kruskal.test(CPU_user.s. ~ Engine , data = datasetJSON)
+dunnTest(CPU_user.s. ~ Engine , data = datasetJSON, method = "bh")
+post_hoc_results <- dunn_test(CPU_user.s. ~ Engine, data = datasetJSON, p.adjust.method = "BH")
+post_hoc_results$r <- post_hoc_results$statistic / sqrt(post_hoc_results$n1+post_hoc_results$n2)
+post_hoc_results[, c(1,2,3,10)]
+```
+
+# Test CPU_user.s. XML
+```{r}
+by(datasetXML$CPU_user.s., datasetXML$Engine, shapiro.test)
+kruskal.test(CPU_user.s. ~ Engine , data = datasetXML)
+dunnTest(CPU_user.s. ~ Engine , data = datasetXML, method = "bh")
+post_hoc_results <- dunn_test(CPU_user.s. ~ Engine, data = datasetXML, p.adjust.method = "BH")
+post_hoc_results$r <- post_hoc_results$statistic / sqrt(post_hoc_results$n1+post_hoc_results$n2)
+post_hoc_results[, c(1,2,3,10)]
+```
+# Test CPU_user.s. Institutions
+```{r}
+datasetInstitutionsFiltered <- datasetInstitutions[datasetInstitutions$Engine != "ShExML-v0.3.2", ]
+by(datasetInstitutionsFiltered$CPU_user.s., datasetInstitutionsFiltered$Engine, shapiro.test)
+kruskal.test(CPU_user.s. ~ Engine , data = datasetInstitutionsFiltered)
+dunnTest(CPU_user.s. ~ Engine , data = datasetInstitutionsFiltered, method = "bh")
+post_hoc_results <- dunn_test(CPU_user.s. ~ Engine, data = datasetInstitutionsFiltered, p.adjust.method = "BH")
+post_hoc_results$r <- post_hoc_results$statistic / sqrt(post_hoc_results$n1+post_hoc_results$n2)
+post_hoc_results[, c(1,2,3,10)]
+```
+
+# Plot CPU_user.s.
+```{r}
+dataset %>%
+    ggplot(aes(fill=Input, y=CPU_user.s., x=Engine)) +
+        geom_violin(trim=FALSE, scale="width") + 
+        coord_trans(y="log10") +
+        theme_minimal() + 
+        ylab("CPU user time (s)") +
+        theme(legend.position="bottom", text = element_text(size=15))
+```
+
+# Test CPU_Percentage JSON
+```{r}
+by(datasetJSON$CPU_Percentage, datasetJSON$Engine, shapiro.test)
+kruskal.test(CPU_Percentage ~ Engine , data = datasetJSON)
+dunnTest(CPU_Percentage ~ Engine , data = datasetJSON, method = "bh")
+post_hoc_results <- dunn_test(CPU_Percentage ~ Engine, data = datasetJSON, p.adjust.method = "BH")
+post_hoc_results$r <- post_hoc_results$statistic / sqrt(post_hoc_results$n1+post_hoc_results$n2)
+post_hoc_results[, c(1,2,3,10)]
+```
+
+# Test CPU_Percentage XML
+```{r}
+by(datasetXML$CPU_Percentage, datasetXML$Engine, shapiro.test)
+kruskal.test(CPU_Percentage ~ Engine , data = datasetXML)
+dunnTest(CPU_Percentage ~ Engine , data = datasetXML, method = "bh")
+post_hoc_results <- dunn_test(CPU_Percentage ~ Engine, data = datasetXML, p.adjust.method = "BH")
+post_hoc_results$r <- post_hoc_results$statistic / sqrt(post_hoc_results$n1+post_hoc_results$n2)
+post_hoc_results[, c(1,2,3,10)]
+```
+# Test CPU_Percentage Institutions
+```{r}
+datasetInstitutionsFiltered <- datasetInstitutions[datasetInstitutions$Engine != "ShExML-v0.3.2", ]
+by(datasetInstitutionsFiltered$CPU_Percentage, datasetInstitutionsFiltered$Engine, shapiro.test)
+kruskal.test(CPU_Percentage ~ Engine , data = datasetInstitutionsFiltered)
+dunnTest(CPU_Percentage ~ Engine , data = datasetInstitutionsFiltered, method = "bh")
+post_hoc_results <- dunn_test(CPU_Percentage ~ Engine, data = datasetInstitutionsFiltered, p.adjust.method = "BH")
+post_hoc_results$r <- post_hoc_results$statistic / sqrt(post_hoc_results$n1+post_hoc_results$n2)
+post_hoc_results[, c(1,2,3,10)]
+```
+
+# Plot CPU_Percentage
+```{r}
+#dataset$CPU_Percentage_decimal <- dataset$CPU_Percentage / 100
+
+dataset %>%
+    ggplot(aes(fill=Input, y=CPU_Percentage, x=Engine)) +
+        geom_violin(trim=FALSE, scale="width") + 
+        coord_trans(y="log10") +
+        theme_minimal() + 
+        ylab("CPU Usage (%)") +
+        theme(legend.position="bottom", text = element_text(size=15))
+```
+# Test MaxMemory.Kbytes. JSON
+```{r}
+by(datasetJSON$MaxMemory.Kbytes., datasetJSON$Engine, shapiro.test)
+kruskal.test(MaxMemory.Kbytes. ~ Engine , data = datasetJSON)
+dunnTest(MaxMemory.Kbytes. ~ Engine , data = datasetJSON, method = "bh")
+post_hoc_results <- dunn_test(MaxMemory.Kbytes. ~ Engine, data = datasetJSON, p.adjust.method = "BH")
+post_hoc_results$r <- post_hoc_results$statistic / sqrt(post_hoc_results$n1+post_hoc_results$n2)
+post_hoc_results[, c(1,2,3,10)]
+```
+# Test MaxMemory.Kbytes. XML
+```{r}
+by(datasetXML$MaxMemory.Kbytes., datasetXML$Engine, shapiro.test)
+kruskal.test(MaxMemory.Kbytes. ~ Engine , data = datasetXML)
+dunnTest(MaxMemory.Kbytes. ~ Engine , data = datasetXML, method = "bh")
+post_hoc_results <- dunn_test(MaxMemory.Kbytes. ~ Engine, data = datasetXML, p.adjust.method = "BH")
+post_hoc_results$r <- post_hoc_results$statistic / sqrt(post_hoc_results$n1+post_hoc_results$n2)
+post_hoc_results[, c(1,2,3,10)]
+```
+# Test MaxMemory.Kbytes. Institutions
+```{r}
+datasetInstitutionsFiltered <- datasetInstitutions[datasetInstitutions$Engine != "ShExML-v0.3.2", ]
+by(datasetInstitutionsFiltered$MaxMemory.Kbytes., datasetInstitutionsFiltered$Engine, shapiro.test)
+kruskal.test(MaxMemory.Kbytes. ~ Engine , data = datasetInstitutionsFiltered)
+dunnTest(MaxMemory.Kbytes. ~ Engine , data = datasetInstitutionsFiltered, method = "bh")
+post_hoc_results <- dunn_test(MaxMemory.Kbytes. ~ Engine, data = datasetInstitutionsFiltered, p.adjust.method = "BH")
+post_hoc_results$r <- post_hoc_results$statistic / sqrt(post_hoc_results$n1+post_hoc_results$n2)
+post_hoc_results[, c(1,2,3,10)]
+```
+# Plot MaxMemory.Kbytes.
+```{r}
+dataset$MaxMemory.Mbytes. <- dataset$MaxMemory.Kbytes. / 1024
+
+dataset %>%
+    ggplot(aes(fill=Input, y=MaxMemory.Mbytes., x=Engine)) +
+        geom_violin(trim=FALSE, scale="width") + 
+        coord_trans(y="log10") +
+        theme_minimal() + 
+        ylab("Max memory used (MB)") +
+        theme(legend.position="bottom", text = element_text(size=15))
+```

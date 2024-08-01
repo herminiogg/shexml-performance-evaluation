@@ -22,3 +22,7 @@ The statistical analysis was performed in R and it has been documented using RMa
     * [performanceInstitutionsAnalysis.Rmd](performanceInstitutionsAnalysis.Rmd)
     * [performanceInstitutionsAnalysis.md](performanceInstitutionsAnalysis.md)
     * [performanceInstitutionsAnalysis.html](https://herminiogg.github.io/shexml-performance-evaluation/statistics/performanceInstitutionsAnalysis.html)
+* RAM and CPU usage
+    * [performanceRAMAndCPUAnalysis.Rmd](performanceRAMAndCPUAnalysis.Rmd)
+    * [performanceRAMAndCPUAnalysis.md](performanceRAMAndCPUAnalysis.md)
+    * [performanceRAMAndCPUAnalysis.html](performanceRAMAndCPUAnalysis.html)

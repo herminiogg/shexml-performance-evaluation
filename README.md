@@ -19,8 +19,9 @@ Each folder contains the following contents:
 * [mapping-rules](mapping-rules): the used mapping rules per input are stored here.
 * [profiler-snapshots](profiler-snapshots): it contains the snapshots extracted from the profiling tool (VisualVM) per input and per engine version that were used for the analysis of the bottlenecks.
 * [statistics](statistics): all the results and analysis related to the statistical analysis are stored here:
-    * [openRefineSteps](openRefineSteps): it contains a set of instructions to convert the text output of the experiments to a processable CSV.
-    * [results](results): the results once converted to CSV are stored here.
+    * [openRefineSteps](statistics/openRefineSteps): it contains a set of instructions to convert the text output of the experiments to a processable CSV.
+    * [results](statistics/results): the results once converted to CSV are stored here.
 * [sparql-anything-experiment](sparql-anything-experiment): it contains the replication study over the [SPARQL-Anything paper evaluation](https://github.com/SPARQL-Anything/experiments) containing the old versions of the engines as well as the new versions of them.
-    * [sparql.anything.experiment](sparql.anything.experiment) it contains the Java code to create the data used in the evaluation
-    * [experiment](experiment) it contains the modified version of the SPARQL-Anything experiment. To run this simply use the ```run_all.sh``` that will execute all the experiment including the original onew and the modified one with the new versions of the engines.
+    * [sparql.anything.experiment](sparql-anything-experiment/sparql.anything.experiment) it contains the Java code to create the data used in the evaluation
+    * [experiment](sparql-anything-experiment/experiment) it contains the modified version of the SPARQL-Anything experiment. To run this simply use the ```run_all.sh``` that will execute all the experiment including the original onew and the modified one with the new versions of the engines.
+    * [results](sparql-anything-experiment/experiment/results) it contains the results, analysis and graphics derived from this replication study.

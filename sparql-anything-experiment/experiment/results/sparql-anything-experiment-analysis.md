@@ -20,7 +20,8 @@ different_inputs[different_inputs$Engine != "ShExML-v0.2.7", ] %>%
 ```
 
 ![](sparql-anything-experiment-analysis_files/figure-markdown_github/unnamed-chunk-2-1.png)
-\# Plot incremental input for old versions
+
+# Plot incremental input for old versions
 
 ``` r
 increment_input$Input <- factor(increment_input$Input)
@@ -41,7 +42,8 @@ increment_input[(increment_input$Engine == "ShExML-v0.2.7" | increment_input$Eng
     ## generated.
 
 ![](sparql-anything-experiment-analysis_files/figure-markdown_github/unnamed-chunk-3-1.png)
-\# Plot incremental input for new versions
+
+# Plot incremental input for new versions
 
 ``` r
 increment_input$Input <- factor(increment_input$Input)

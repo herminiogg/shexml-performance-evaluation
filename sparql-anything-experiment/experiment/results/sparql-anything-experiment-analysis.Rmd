@@ -36,6 +36,8 @@ different_inputs[different_inputs$Engine != "ShExML-v0.2.7", ] %>%
       scale_x_discrete(limits=c("q9", "q10", "q11", "q12")) + 
       theme(text = element_text(size=15))
 ```
+
+
 # Plot incremental input for old versions
 ```{r}
 increment_input$Input <- factor(increment_input$Input)
@@ -48,6 +50,7 @@ increment_input[(increment_input$Engine == "ShExML-v0.2.7" | increment_input$Eng
       theme(legend.position="bottom", text = element_text(size=15)) + 
       scale_y_log10()
 ```
+
 # Plot incremental input for new versions
 ```{r}
 increment_input$Input <- factor(increment_input$Input)

@@ -87,6 +87,7 @@ dataset %>%
         ylab("CPU kernel time (s)") +
         theme(legend.position="bottom", text = element_text(size=15))
 ```
+
 # Test CPU_user.s. JSON
 ```{r}
 by(datasetJSON$CPU_user.s., datasetJSON$Engine, shapiro.test)
@@ -170,6 +171,7 @@ dataset %>%
         ylab("CPU Usage (%)") +
         theme(legend.position="bottom", text = element_text(size=15))
 ```
+
 # Test MaxMemory.Kbytes. JSON
 ```{r}
 by(datasetJSON$MaxMemory.Kbytes., datasetJSON$Engine, shapiro.test)

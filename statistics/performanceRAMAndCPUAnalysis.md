@@ -502,7 +502,8 @@ dataset %>%
     ## Warning: Groups with fewer than two data points have been dropped.
 
 ![](performanceRAMAndCPUAnalysis_files/figure-markdown_github/unnamed-chunk-7-1.png)
-\# Test CPU_user.s. JSON
+
+# Test CPU_user.s. JSON
 
 ``` r
 by(datasetJSON$CPU_user.s., datasetJSON$Engine, shapiro.test)
@@ -1087,7 +1088,8 @@ dataset %>%
     ## Warning: Groups with fewer than two data points have been dropped.
 
 ![](performanceRAMAndCPUAnalysis_files/figure-markdown_github/unnamed-chunk-15-1.png)
-\# Test MaxMemory.Kbytes. JSON
+
+# Test MaxMemory.Kbytes. JSON
 
 ``` r
 by(datasetJSON$MaxMemory.Kbytes., datasetJSON$Engine, shapiro.test)

@@ -31,7 +31,7 @@ increment_input[(increment_input$Engine == "ShExML-v0.2.7" | increment_input$Eng
       ylab("Elapsed time (ms)") +
       theme_minimal() + 
       scale_x_discrete(expand = c(0.04,0.04)) +
-      theme(legend.position="bottom", text = element_text(size=15)) + 
+      theme(legend.position="bottom", text = element_text(size=10)) + 
       scale_y_log10()
 ```
 
@@ -53,7 +53,7 @@ increment_input[(increment_input$Engine == "ShExML-v0.5.1" | increment_input$Eng
       ylab("Elapsed time (ms)") +
       theme_minimal() + 
       scale_x_discrete(expand = c(0.04,0.04)) +
-      theme(legend.position="bottom", text = element_text(size=15)) + 
+      theme(legend.position="bottom", text = element_text(size=10)) + 
       scale_y_log10()
 ```
 
